@@ -1,10 +1,11 @@
+@charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
 :root {
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
-    --Cyan-lowOpacity: hsla(178, 100%, 50%, 0.502);
+    --Cyan-hover-lowOpacity: hsla(178, 100%, 50%, 0.502);
     --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
     --Very-dark-blue-cardBG: hsl(216, 50%, 16%);
     --Very-dark-blue-line: hsl(215, 32%, 27%);
@@ -28,7 +29,7 @@ body {
 }
 
 .main-container {
-    height: 544px;
+    height: 545px;
     width: 330px;
     padding: 24px;
     background-color: var(--Very-dark-blue-cardBG);
@@ -53,7 +54,7 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--Cyan-lowOpacity);
+    background-color: var(--Cyan-hover-lowOpacity);
 }
 
 .img-eye:hover {
@@ -63,61 +64,80 @@ body {
 
 .title {
     font-size: 1.3em;
-    margin-top: 26px;
-}
-
-.white-text {
+    font-weight: 600;
+    margin-top: 24px;
     color: var(--White);
 }
 
-
-
-
-
-
-
-
-body {
-    font-family: 'Outfit', sans-serif;
+.text-hover:hover {
+    color: var(--Cyan);
+    cursor: pointer;
 }
 
+.description {
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 24px;
+}
 
+.text-color-darkBlue {
+    color: var(--Soft-blue);
+}
 
+.container-eth-days {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
 
+.align-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
 
+.text-cyan {
+    color: var(--Cyan);
+}
 
+.line-darkBlue {
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
 
+.creator-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
+.img-creator {
+    background-image: url("/images/image-avatar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
 
+.creator {
+    font-size: 0.8em;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.creator-name {
+    color: var(--White);
+}
 
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: var(--Soft-blue);
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(158, 75%, 36%);
 }
